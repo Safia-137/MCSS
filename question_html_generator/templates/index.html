@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Question HTML</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enter Question Details</h2>
+        <form action="/generate" method="post">
+            <label for="book_name">Book Name:</label>
+            <input type="text" id="book_name" name="book_name" required><br><br>
+            <label for="session_name">Session Name:</label>
+            <input type="text" id="session_name" name="session_name" required><br><br>
+
+            <label for="topic_title">Topic Title:</label>
+            <input type="text" id="topic_title" name="topic_title" required><br><br>
+
+            <label for="question_number">Question Number:</label>
+            <input type="text" id="question_number" name="question_number" required><br><br>
+            <label for="total_questions">Total question:</label>
+            <input type="text" id="total_questions" name="total_questions" required><br><br>
+            <label for="question_stem">Question:</label>
+            <textarea id="question_stem" name="question_stem" required></textarea><br><br>
+
+            <label for="option_1">Option A:</label>
+            <input type="text" id="option_1" name="option_1" required><br><br>
+
+            <label for="option_2">Option B:</label>
+            <input type="text" id="option_2" name="option_2" required><br><br>
+
+            <label for="option_3">Option C:</label>
+            <input type="text" id="option_3" name="option_3" required><br><br>
+
+            <label for="option_4">Option D:</label>
+            <input type="text" id="option_4" name="option_4" required><br><br>
+
+            <label for="correct_answer">Correct Answer (A/B/C/D):</label>
+            <input type="number" id="correct_answer" name="correct_answer" min="1" max="4" required><br><br>
+
+
+            <button type="submit">Generate Question HTML</button>
+        </form>
+    </div>
+</body>
+</html>

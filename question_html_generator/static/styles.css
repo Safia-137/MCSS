@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fb;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Question Section */
+.question-section {
+    margin-top: 25px;
+}
+
+/* Topic Title */
+.topic-title {
+    font-size: 18px;
+    color: #7d7d7d;
+    margin-bottom: 15px;
+}
+
+/* Options Style */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buttons */
+button {
+    background-color: #5C6BC0;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #3f4c8b;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #b0b9d7;
+    cursor: not-allowed;
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav-button form button {
+    background-color: #4CAF50;
+}
+
+.nav-button form button:hover {
+    background-color: #45a049;
+}
+
+.nav-button form button:disabled {
+    background-color: #b0e0a3;
+}
+
+/* Form Styles */
+form {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #5C6BC0;
+    outline: none;
+}
+
+form textarea {
+    height: 150px;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 850px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
